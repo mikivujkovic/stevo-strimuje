@@ -9,22 +9,50 @@ body {
   -webkit-text-fill-color: white;
   align-content: center;
   justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.App1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  font-family: sans-serif;
+  font-size: 24px;
+  -webkit-text-fill-color: white;
+  align-content: end;
+  justify-content: center;
+  align-items: end;
+  justify-items: center;
+}
+
+.lastRow {
+  font-size: 30px;
 }
 
 .nav {
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(13, 1fr);
   color: white;
   text-decoration: none;
 }
 
+.link {
+  color: white;
+}
+
 .naslov {
   text-align: center;
+  color: black;
+  -webkit-text-fill-color: black;
+  background-color: rgba(242, 185, 33, 1);
+  width: 60%;
+  border-bottom: 5px solid black;
 }
 
 .table {
   /* width: 1700px;*/
-  border: 10px solid black;
+  /*border: 10px solid white;*/
+  border-collapse: collapse;
 }
 
 th {
@@ -33,19 +61,20 @@ th {
   background-color: rgba(242, 185, 33, 1);
   -webkit-text-fill-color: black;
   /*border: 10px solid black;*/
-  border: 5px solid black;
+  /*border: 5px solid black;*/
   height: 50px;
+  border: 0;
 }
 
 td {
   /*background-image: url(/OLP5.png);*/
-  border: 5px solid black;
+  /*border: 5px solid black;*/
   height: 50px;
 }
 
 td:nth-child(1) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid black;
+  border: 5px solid white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   font-weight: bold;
   width: 100px;
@@ -56,7 +85,7 @@ td:nth-child(1) {
 
 td:nth-child(2) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid black;
+  border: 5px solid white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   width: 800px;
@@ -66,7 +95,7 @@ td:nth-child(2) {
 td:nth-child(3) {
   text-align: left;
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid black;
+  border: 5px solid white;
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   width: 250px;
@@ -77,7 +106,7 @@ td:nth-child(3) {
 
 td:nth-child(4) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid black;
+  border: 5px solid white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   font-weight: bold;
   width: 200px;

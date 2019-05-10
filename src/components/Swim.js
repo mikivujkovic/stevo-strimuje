@@ -3,11 +3,10 @@ import axios from "axios";
 import "../styles.css";
 
 const desetinke = x => {
-  const desetinka = parseInt(x.split(".")[1], 10);
   const sekunda = parseInt(x.split(":")[2], 10);
   const minuta = parseInt(x.split(":")[1], 10);
   const sat = parseInt(x.split(":")[0], 10);
-  return desetinka + sekunda*10 + minuta*600 + sat*36000
+  return sekunda*10 + minuta*600 + sat*36000
 }
 
 export default class Swim extends React.Component {
@@ -55,7 +54,7 @@ export default class Swim extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div className="App"> 
         <div className="naslov">Female Swim Time</div>
           <table className="table">
             <thead>
@@ -78,7 +77,8 @@ export default class Swim extends React.Component {
             </tbody>
           </table>
         </div>
-        <div>
+        <br />
+        <div className="App">
         <div className="naslov">Male Swim Time</div>
           <table className="table">
             <thead>

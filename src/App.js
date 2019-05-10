@@ -8,9 +8,11 @@ import Bike from "./components/Bike";
 import Km5 from "./components/Km5";
 import Km10 from "./components/Km10";
 import Km15 from "./components/Km15";
+import Km20 from "./components/Km20";
 import Km27 from "./components/Km27";
 import Km45 from "./components/Km45";
 import Km63 from "./components/Km63";
+import Checkpoint from "./components/Checkpoint";
 
 
 export default class PersonList extends React.Component {
@@ -19,17 +21,19 @@ export default class PersonList extends React.Component {
     return (
      <div>
       <nav className="nav">
-        <Link to="swim">Swim </Link>{"   "}
-        <Link to="t1">T1 </Link>{"   "}
-        <Link to="km27">27km </Link>{"   "}
-        <Link to="km45">45km </Link>{"   "}
-        <Link to="km63">63km </Link>{"   "}
-        <Link to="bike">Bike </Link>{"   "}
-        <Link to="t2">T2 </Link>{"   "}
-        <Link to="km5">5km </Link>{"   "}
-        <Link to="km10">10km </Link>{"   "}
-        <Link to="km15">15km </Link>{"   "}
-        <Link to="finish">Finish </Link>{"   "}
+        <Link className="link" to="swim">Swim </Link>{"   "}
+        <Link className="link" to="t1">T1 </Link>{"   "}
+        <Link className="link" to="km27">27km </Link>{"   "}
+        <Link className="link" to="km45">45km </Link>{"   "}
+        <Link className="link" to="km63">63km </Link>{"   "}
+        <Link className="link" to="bike">90km </Link>{"   "}
+        <Link className="link" to="t2">T2 </Link>{"   "}
+        <Link className="link" to="km5">5km </Link>{"   "}
+        <Link className="link" to="km10">10km </Link>{"   "}
+        <Link className="link" to="km15">15km </Link>{"   "}
+        <Link className="link" to="km20">20km </Link>{"   "}
+        <Link className="link" to="finish">Finish </Link>{"   "}
+        <Link className="link" to="checkpoint">Checkpoint</Link>
       </nav>
       <br />
       <Router>
@@ -43,7 +47,9 @@ export default class PersonList extends React.Component {
         <Km5 path="km5"/>
         <Km10 path="km10"/>
         <Km15 path="km15"/>
+        <Km20 path="km20"/>
         <Finish path="finish"/>
+        <Checkpoint path="checkpoint"/>
     </Router>
     </div>
     );

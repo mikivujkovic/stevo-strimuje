@@ -33,7 +33,7 @@ export default class Finish extends React.Component {
     
 
     const sortiranje = (a, b) => {
-      return desetinke(a[16]) - desetinke(b[16])
+      return desetinke(a[17]) - desetinke(b[17])
     }
 
     axios.get(`https://api.raceresult.com/123664/YT3QE5CKGWU6Y6C4VD33BLSCEK2C2ZEX`).then(res => {
@@ -54,7 +54,7 @@ export default class Finish extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div className="App">
         <div className="naslov">Female Finish</div>
           <table className="table">
             <thead>
@@ -71,13 +71,14 @@ export default class Finish extends React.Component {
                   <td>{result[0]}</td>
                   <td>{result[2]}</td>
                   <td>{result[3]}</td>
-                  <td>{result[16]}</td>
+                  <td>{result[17]}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <div>
+        <br />
+        <div className="App">
         <div className="naslov">Male Finish</div>
           <table className="table">
             <thead>
@@ -94,7 +95,7 @@ export default class Finish extends React.Component {
                   <td>{result[0]}</td>
                   <td>{result[2]}</td>
                   <td>{result[3]}</td>
-                  <td>{result[16]}</td>
+                  <td>{result[17]}</td>
                 </tr>
               ))}
             </tbody>

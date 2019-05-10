@@ -9,7 +9,7 @@ const desetinke = x => {
   return sekunda*10 + minuta*600 + sat*36000
 }
 
-export default class Bike extends React.Component {
+export default class Km20 extends React.Component {
 
   constructor(props) {
     super(props);
@@ -33,7 +33,7 @@ export default class Bike extends React.Component {
     
 
     const sortiranje = (a, b) => {
-      return desetinke(a[11]) - desetinke(b[11])
+      return desetinke(a[16]) - desetinke(b[16])
     }
 
     axios.get(`https://api.raceresult.com/123664/YT3QE5CKGWU6Y6C4VD33BLSCEK2C2ZEX`).then(res => {
@@ -55,7 +55,7 @@ export default class Bike extends React.Component {
     return (
       <div className="App">
         <div className="App">
-        <div className="naslov">Female 90km Bike</div>
+        <div className="naslov">Female 20km Run</div>
           <table className="table">
             <thead>
               <tr className="tableHeader">
@@ -71,7 +71,7 @@ export default class Bike extends React.Component {
                   <td>{result[0]}</td>
                   <td>{result[2]}</td>
                   <td>{result[3]}</td>
-                  <td>{result[11]}</td>
+                  <td>{result[16]}</td>
                 </tr>
               ))}
             </tbody>
@@ -79,7 +79,7 @@ export default class Bike extends React.Component {
         </div>
         <br />
         <div className="App">
-        <div className="naslov">Male 90km Bike</div>
+        <div className="naslov">Male 20km Run</div>
           <table className="table">
             <thead>
               <tr className="tableHeader">
@@ -95,7 +95,7 @@ export default class Bike extends React.Component {
                   <td>{result[0]}</td>
                   <td>{result[2]}</td>
                   <td>{result[3]}</td>
-                  <td>{result[11]}</td>
+                  <td>{result[16]}</td>
                 </tr>
               ))}
             </tbody>

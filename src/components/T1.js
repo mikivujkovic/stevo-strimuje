@@ -3,9 +3,10 @@ import axios from "axios";
 import "../styles.css";
 
 const desetinke = x => {
-  const sekunda = parseInt(x.split(":")[1], 10);
-  const minuta = parseInt(x.split(":")[0], 10);
-  return sekunda*10 + minuta*600
+  const sekunda = parseInt(x.split(":")[2], 10);
+  const minuta = parseInt(x.split(":")[1], 10);
+  const sat = parseInt(x.split(":")[0], 10);
+  return sekunda*10 + minuta*600 + sat*36000
 }
 
 export default class T1 extends React.Component {
@@ -38,7 +39,6 @@ export default class T1 extends React.Component {
     axios.get(`https://api.raceresult.com/123664/YT3QE5CKGWU6Y6C4VD33BLSCEK2C2ZEX`).then(res => {
       const rezultatiZ = res.data.data.filter(jeZensko).sort(sortiranje).slice(0, 5);
       const rezultatiM = res.data.data.filter(jeMusko).sort(sortiranje).slice(0, 5);
-      console.log(desetinke(rezultatiZ[0][7]));
       this.setState({ rezultatiZ, rezultatiM });
     });
   }
@@ -54,7 +54,7 @@ export default class T1 extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div className="App">
         <div className="naslov">Female T1</div>
           <table className="table">
             <thead>
@@ -77,7 +77,8 @@ export default class T1 extends React.Component {
             </tbody>
           </table>
         </div>
-        <div>
+        <br />
+        <div className="App">
         <div className="naslov">Male T1</div>
           <table className="table">
             <thead>

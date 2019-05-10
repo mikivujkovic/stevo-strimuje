@@ -54,7 +54,7 @@ export default class Km27 extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div className="App">
         <div className="naslov">Female 27km Bike</div>
           <table className="table">
             <thead>
@@ -77,7 +77,8 @@ export default class Km27 extends React.Component {
             </tbody>
           </table>
         </div>
-        <div>
+        <br />
+        <div className="App">
         <div className="naslov">Male 27km Bike</div>
           <table className="table">
             <thead>

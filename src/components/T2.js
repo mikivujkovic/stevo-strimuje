@@ -3,9 +3,10 @@ import axios from "axios";
 import "../styles.css";
 
 const desetinke = x => {
-  const sekunda = parseInt(x.split(":")[1], 10);
-  const minuta = parseInt(x.split(":")[0], 10);
-  return sekunda*10 + minuta*600
+  const sekunda = parseInt(x.split(":")[2], 10);
+  const minuta = parseInt(x.split(":")[1], 10);
+  const sat = parseInt(x.split(":")[0], 10);
+  return sekunda*10 + minuta*600 + sat*36000
 }
 
 export default class T2 extends React.Component {
@@ -54,7 +55,7 @@ export default class T2 extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
+        <div className="App">
         <div className="naslov">Female T2</div>
           <table className="table">
             <thead>
@@ -77,7 +78,8 @@ export default class T2 extends React.Component {
             </tbody>
           </table>
         </div>
-        <div>
+        <br />
+        <div className="App">
         <div className="naslov">Male T2</div>
           <table className="table">
             <thead>
