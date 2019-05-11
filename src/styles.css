@@ -11,11 +11,25 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
+  padding-top: 230px;
+}
+
+.razmak {
+  min-height: 230px;
+  color: black;
+  margin-top: 230px;
+}
+
+.razmak1 {
+  min-height: 450px;
+  color: rgba(242, 185, 33, 1);
+  margin-top: 450 px;
 }
 
 .App1 {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(242, 185, 33, 1);
   font-family: sans-serif;
   font-size: 24px;
   -webkit-text-fill-color: white;
@@ -23,6 +37,7 @@ body {
   justify-content: center;
   align-items: end;
   justify-items: center;
+  padding-top: 800px;
 }
 
 .lastRow {
@@ -74,7 +89,7 @@ td {
 
 td:nth-child(1) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid white;
+  border: 5px solid rgba(242, 185, 33, 1);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   font-weight: bold;
   width: 100px;
@@ -85,7 +100,7 @@ td:nth-child(1) {
 
 td:nth-child(2) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid white;
+  border: 5px solid rgba(242, 185, 33, 1);
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   width: 800px;
@@ -95,7 +110,7 @@ td:nth-child(2) {
 td:nth-child(3) {
   text-align: left;
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid white;
+  border: 5px solid rgba(242, 185, 33, 1);
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   width: 250px;
@@ -106,7 +121,7 @@ td:nth-child(3) {
 
 td:nth-child(4) {
   background-color: rgba(255, 0, 0, 0.5);
-  border: 5px solid white;
+  border: 5px solid rgba(242, 185, 33, 1);
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   font-weight: bold;
   width: 200px;

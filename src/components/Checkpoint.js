@@ -59,15 +59,10 @@ export default class Checkpoint extends React.Component {
   render() {
     return (
       <div className="App1">
-        <div className="App1">
-        <div className="naslov">Checkpoint</div>
+      
+     
           <table className="table">
             <thead>
-              <tr className="tableHeader">
-                <th className="header-100">Bib</th>
-                <th className="header-800">Name</th>
-                <th className="header-100">Country</th>
-              </tr>
             </thead>
             <tbody>
                 <tr>
@@ -87,7 +82,7 @@ export default class Checkpoint extends React.Component {
                 </tr>
             </tbody>
           </table>
-        </div>
+   
     </div>
     );
   }

@@ -39,7 +39,6 @@ export default class T2 extends React.Component {
     axios.get(`https://api.raceresult.com/123664/YT3QE5CKGWU6Y6C4VD33BLSCEK2C2ZEX`).then(res => {
       const rezultatiZ = res.data.data.filter(jeZensko).sort(sortiranje).slice(0, 5);
       const rezultatiM = res.data.data.filter(jeMusko).sort(sortiranje).slice(0, 5);
-      console.log(desetinke(rezultatiZ[0][7]));
       this.setState({ rezultatiZ, rezultatiM });
     });
   }
@@ -79,7 +78,7 @@ export default class T2 extends React.Component {
           </table>
         </div>
         <br />
-        <div className="App">
+        
         <div className="naslov">Male T2</div>
           <table className="table">
             <thead>
@@ -101,7 +100,7 @@ export default class T2 extends React.Component {
               ))}
             </tbody>
           </table>
-        </div>
+     
     </div>
     );
   }

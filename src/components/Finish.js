@@ -55,30 +55,31 @@ export default class Finish extends React.Component {
     return (
       <div className="App">
         <div className="App">
-        <div className="naslov">Female Finish</div>
-          <table className="table">
-            <thead>
-              <tr className="tableHeader">
-                <th className="header-100">Bib</th>
-                <th className="header-800">Name</th>
-                <th className="header-100">Country</th>
-                <th className="header-100">Gun Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.rezultatiZ.map((result, i) => (
-                <tr key={i}>
-                  <td>{result[0]}</td>
-                  <td>{result[2]}</td>
-                  <td>{result[3]}</td>
-                  <td>{result[17]}</td>
+          <div classname="razmak"></div>
+          <div className="naslov">Female Finish</div>
+            <table className="table">
+              <thead>
+                <tr className="tableHeader">
+                  <th className="header-100">Bib</th>
+                  <th className="header-800">Name</th>
+                  <th className="header-100">Country</th>
+                  <th className="header-100">Gun Time</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {this.state.rezultatiZ.map((result, i) => (
+                  <tr key={i}>
+                    <td>{result[0]}</td>
+                    <td>{result[2]}</td>
+                    <td>{result[3]}</td>
+                    <td>{result[17]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         <br />
-        <div className="App">
+       
         <div className="naslov">Male Finish</div>
           <table className="table">
             <thead>
@@ -100,7 +101,6 @@ export default class Finish extends React.Component {
               ))}
             </tbody>
           </table>
-        </div>
     </div>
     );
   }

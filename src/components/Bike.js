@@ -78,7 +78,8 @@ export default class Bike extends React.Component {
           </table>
         </div>
         <br />
-        <div className="App">
+        
+        <div classname="razmak"></div>
         <div className="naslov">Male 90km Bike</div>
           <table className="table">
             <thead>
@@ -100,7 +101,6 @@ export default class Bike extends React.Component {
               ))}
             </tbody>
           </table>
-        </div>
     </div>
     );
   }

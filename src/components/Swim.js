@@ -78,7 +78,7 @@ export default class Swim extends React.Component {
           </table>
         </div>
         <br />
-        <div className="App">
+      
         <div className="naslov">Male Swim Time</div>
           <table className="table">
             <thead>
@@ -100,7 +100,7 @@ export default class Swim extends React.Component {
               ))}
             </tbody>
           </table>
-        </div>
+     
     </div>
     );
   }
