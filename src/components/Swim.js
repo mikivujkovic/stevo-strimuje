@@ -3,10 +3,9 @@ import axios from "axios";
 import "../styles.css";
 
 const desetinke = x => {
-  const sekunda = parseInt(x.split(":")[2], 10);
-  const minuta = parseInt(x.split(":")[1], 10);
-  const sat = parseInt(x.split(":")[0], 10);
-  return sekunda*10 + minuta*600 + sat*36000
+  const sekunda = parseInt(x.split(":")[1], 10);
+  const minuta = parseInt(x.split(":")[0], 10);
+  return sekunda*10 + minuta*600
 }
 
 export default class Swim extends React.Component {
